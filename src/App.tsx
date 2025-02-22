@@ -16,6 +16,7 @@ import Alerts from './pages/UiElements/Alerts';
 import Buttons from './pages/UiElements/Buttons';
 import DefaultLayout from './layout/DefaultLayout';
 import ProtectedRouterLayout from './router/ProtectedRouterLayout';
+import Product from './pages/Products/Product';
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -55,6 +56,15 @@ function App() {
               <>
                 <PageTitle title="eCommerce Dashboard | TailAdmin - Tailwind CSS Admin Dashboard Template" />
                 <ECommerce />
+              </>
+            }
+          />
+          <Route
+            path="/products"
+            element={
+              <>
+                <PageTitle title="Products | TailAdmin - Tailwind CSS Admin Dashboard Template" />
+                <Product />
               </>
             }
           />

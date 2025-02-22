@@ -15,13 +15,13 @@ const TableTwo = ({ productData }: { productData: Product[] }) => {
           <p className="font-medium">Product Name</p>
         </div>
         <div className="col-span-2 hidden items-center sm:flex">
-          <p className="font-medium">Description</p>
+          <p className="font-medium">Rank</p>
         </div>
         <div className="col-span-1 flex items-center">
           <p className="font-medium">Price</p>
         </div>
         <div className="col-span-1 flex items-center">
-          <p className="font-medium">Rank</p>
+          <p className="font-medium">Description</p>
         </div>
         
       </div>
@@ -43,7 +43,7 @@ const TableTwo = ({ productData }: { productData: Product[] }) => {
           </div>
           <div className="col-span-2 hidden items-center sm:flex">
             <p className="text-sm text-black dark:text-white">
-              {product.description}
+              {product.rank}
             </p>
           </div>
           <div className="col-span-1 flex items-center">
@@ -53,7 +53,7 @@ const TableTwo = ({ productData }: { productData: Product[] }) => {
           </div>
           <div className="col-span-2 flex items-center">
             <p className="text-sm text-black dark:text-white">
-              {product.rank}
+              {product.description}
             </p>
           </div>
         </div>

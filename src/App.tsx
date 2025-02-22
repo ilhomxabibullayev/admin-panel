@@ -49,7 +49,6 @@ function App() {
 
       <Route element={<ProtectedRouterLayout />}>
         <Route element={<DefaultLayout />}>
-
           <Route
             index
             element={
